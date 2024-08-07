@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: poppins;
+    background-color: hsl(0, 0%, 98%);
+ }
+
+ .reliable{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(234, 12%, 34%);
+    padding: 25px;
+ }
+
+ .reliable .rel{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color:  hsl(229, 6%, 66%);
+    font-family: poppins;
+ }
+
+ .reliable .powered{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: poppins;
+    font-weight: 600;
+ }
+
+ .reliable p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    font-family: poppins;
+    color:  hsl(229, 6%, 66%);
+    padding: 15px;
+ }
+
+ .team{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: 25px;
+   margin: 10px;
+   
+ }
+
+ .supervisor{
+   width: 450px;
+   margin: 10px;
+   padding: 20px;
+   box-shadow: 2px 2px 5px .3px hsl(229, 6%, 66%);
+   border-top: 7px solid hsl(180, 62%, 55%);
+   color: hsl(234, 12%, 34%);
+   border-radius: 10px;
+
+   &:nth-child(2){
+      border-top: 7px solid hsl(0, 78%, 62%);
+   }
+   &:nth-child(3){
+      border-top: 7px solid hsl(34, 97%, 64%);
+   }
+   &:nth-child(4){
+      border-top: 7px solid hsl(212, 86%, 64%);
+   }
+ }
+
+ .supervisor p{
+   line-height: 25px;
+   letter-spacing: 1.5px;
+   margin-bottom: 90px;
+   margin-top: 10px;
+   color: hsl(229, 6%, 66%);
+ }
+
+ .supervisor img{
+   width: 100px;
+   height: 100px;
+   float: right;
+ }
+
+
+ @media (max-width: 440px){
+   .box{
+     
+      padding: 0;
+   }
+
+   .reliable{
+      width: 350px;
+      padding: 10px;
+   }
+
+   .reliable p{
+      padding: 0px;
+   }
+
+  .reliable .rel{
+      font-size: 1.5rem;
+   }
+
+   .reliable .powered{
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+   }
+
+   .team{
+    
+      padding: 0;
+   }
+
+   .supervisor{
+      width: 350px;
+      padding: 10px;
+      font-size: 15px;
+   }
+
+ }
+
+ @media (min-width: 1200px){
+
+   .reliable{
+      width: 700px;
+     
+   }
+
+   .reliable .rel{
+      font-size: 2.5rem;
+   }
+
+   .reliable .powered{
+      font-size: 2.5rem;
+   }
+
+
+
+   .team{
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+   }
+
+   .down{
+      transform: translateY(50%);
+      margin: 15px;
+   }
+ }
